@@ -1,4 +1,4 @@
-package Assignment_Questions;
+package Assignment_Questions.L1;
 //  Q2 - Take two numbers and print the sum of both.
 
 import java.util.Scanner;

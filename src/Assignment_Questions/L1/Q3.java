@@ -1,4 +1,4 @@
-package Assignment_Questions;
+package Assignment_Questions.L1;
 //  Q3 - Take a number as input and print the multiplication table for it.
 
 import java.util.Scanner;

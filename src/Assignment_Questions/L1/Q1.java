@@ -1,4 +1,4 @@
-package Assignment_Questions;
+package Assignment_Questions.L1;
 //  Q1 - Input a year and find whether it is a leap year or not.
 
 
