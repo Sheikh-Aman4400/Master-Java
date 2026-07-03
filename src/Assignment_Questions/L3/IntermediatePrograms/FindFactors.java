@@ -1,4 +1,4 @@
-package Assignment_Questions.L3;
+package Assignment_Questions.L3.IntermediatePrograms;
 
 //  Input a number and print all the factors of that number (use loops).
 

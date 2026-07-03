@@ -1,4 +1,4 @@
-package Assignment_Questions.L3;
+package Assignment_Questions.L3.IntermediatePrograms;
 
 import java.util.Scanner;
 
