@@ -1,4 +1,4 @@
-package bubble_sort;
+package sorting_algorithm;
 // Remember Bubble sort is also known as Sinking Sort, Adjacent Swap Sort, Exchange Sort.
 
 import java.util.Arrays;
@@ -12,6 +12,7 @@ public class BubbleSort {
         System.out.println(Arrays.toString(nums));
     }
 
+    //  Bubble Sort: "Repeatedly swap adjacent elements until the largest bubbles to the end."
     private static void bubble(int[] arr){
 
         if (arr == null || arr.length <= 1){
