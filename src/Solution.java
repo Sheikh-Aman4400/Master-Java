@@ -1,25 +1,30 @@
-import java.util.Arrays;
-
 class Solution {
     static void main(String[] args) {
-        int[] n = {4,5,8};
-        int[] n1 = {10,9,1,};
-
-        merge(n, 3, n1, 3);
+        String s = "011010";
+        canReach(s, 2, 3);
     }
-    public static void merge(int[] nums1, int m, int[] nums2, int n) {
+    public static boolean canReach(String s, int minJump, int maxJump) {
 
-        if (nums1 == null || nums2 == null){
-            return;
+        boolean min = false;
+        boolean max = false;
+        int currentIndex = 0;
+
+        while (currentIndex <= s.length()){
+
+            if (s.charAt(minJump + 1) == '0' && min == false){
+                currentIndex += minJump;
+                min = true;
+            } else if (s.charAt(maxJump + 1) == '0' && max == false) {
+                currentIndex += maxJump;
+                max = true;
+            } else {
+
+                if (currentIndex != s.length()){
+                    return false;
+                }
+            }
         }
 
-        int[] result = Arrays.copyOf(nums1, m + n);
-
-        for (int i = m; i < result.length; i++){
-            result[i] = nums2[i - m];
-        }
-
-        Arrays.sort(result);
-        nums1 = result;
+        return true;
     }
 }
